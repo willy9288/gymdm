@@ -4,114 +4,179 @@
 <head>
     <meta charset="UTF-8">
     <title>首頁</title>
+    <style>
+        body {
+            background-color: azure;
+            font-family: '標楷體', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        /* h2 {
+            background-color: cornflowerblue;
+            color: aliceblue;
+        } */
+        /* . ->代表 class */
+        .banner {
+            width: 200px;
+            display: inline-block;
+            background-color: cornflowerblue;
+            color: aliceblue;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 26px;
+            margin: 12px;
+            padding: 6px 12px;
+            padding-left: 12px;
+        }
+
+        /* # ->代表 id */
+        #title {
+            /* width: 200px; */
+            color: blueviolet;
+            background-color: palegoldenrod;
+            font-size: 50px;
+            margin: 2px 12px 24px 32px;
+            margin-top: 60px;
+            padding: 12px;
+            text-align: center;
+        }
+
+        .tlist {
+            background-color: bisque;
+            text-align: left;
+            padding: 12px;
+            border: 1px black solid;
+        }
+
+        .tstyle {
+            text-align: left;
+            padding-left: 50px;
+        }
+    </style>
 </head>
 <!-- 內容顯示區 -->
 
 <body>
-    <h1>我愛健身網站</h1>
-    <p>
-        <b>健身，英文稱為workout，健身這兩個字拆開來的意思就是健康身體，通過各種運動方式或方法來增強力量、增加肌肉量、柔韌性、耐力，以及提高協調和控制身體各部分的能力來使我們的身體更強健。
-        </b>
-    <p>除了塑造好身材，透過健身可以刺激我們身體的肌肉，再搭配飲食的控制，這能大大幫助我們的肌肉量增加，以及讓我們的肌肉更加的結實。</p>
-    <em>如果你對健身仍然保持著懷疑的態度，那你大可以去看看你喜歡的健身老戲骨幹，他們是如何做到年過50/60歲，依舊在
-        舞臺上或者是電影螢幕上綻放光彩。</em><u><b>答案就是堅持運動健身!</b></u></p>
+    <!-- <h1 id="title">我愛健身網站</h1> -->
+    <div id="title">我愛健身網站</div>
+    <div style="background-color: rgb(121, 179, 235);">
+        <p>
+            <b>健身，英文稱為workout，健身這兩個字拆開來的意思就是健康身體，通過各種運動方式或方法來增強力量、增加肌肉量、柔韌性、耐力，以及提高協調和控制身體各部分的能力來使我們的身體更強健。
+            </b>
+        <p>除了塑造好身材，透過健身可以刺激我們身體的肌肉，再搭配飲食的控制，這能大大幫助我們的肌肉量增加，以及讓我們的肌肉更加的結實。</p>
+        <em style="background-color: lightgoldenrodyellow;">如果你對健身仍然保持著懷疑的態度，那你大可以去看看你喜歡的健身老戲骨幹，他們是如何做到年過50/60歲，依舊在
+            舞臺上或者是電影螢幕上綻放光彩。</em><u><b style="background-color: lightcoral;color: aliceblue;">答案就是堅持運動健身!</b></u></p>
+    </div>
     <hr>
     <a href="https://tw.yahoo.com/">
         <img src="https://preview.520cc.com/auto_machine/20201216/3f58b0e6-1228-4134-8533-0423bc600e13.jpg!w800_520cc_water"
             alt="找不到圖片" width="100%">
     </a>
-    <h2>健身的10個好處</h2>
-    <ol type="1">
-        <li>增加基礎代謝率</li>
-        <li>預防疾病和提高免疫力</li>
-        <li>改善心情</li>
-        <li>改善睡眠</li>
-        <li>增加自信</li>
-        <li>增強記憶力</li>
-        <li>增強心肺能力</li>
-        <li>提升睡眠品質</li>
-        <li>釋放工作的壓力</li>
-        <li>增加肌肉助於減肥</li>
-    </ol>
+    <!-- <h2 class="banner">健身的10個好處</h2> -->
+    <div class="banner">健身的10個好處</div>
+    <div class="tlist">
+        <ol type="1">
+            <li>增加基礎代謝率</li>
+            <li>預防疾病和提高免疫力</li>
+            <li>改善心情</li>
+            <li>改善睡眠</li>
+            <li>增加自信</li>
+            <li>增強記憶力</li>
+            <li>增強心肺能力</li>
+            <li>提升睡眠品質</li>
+            <li>釋放工作的壓力</li>
+            <li>增加肌肉助於減肥</li>
+        </ol>
+    </div>
     <hr>
-    <h2>好文章連結</h2>
-    <li>
-        <a target="_blank" href="https://www.fe-amart.com.tw/index.php/life-style/life-info/secret-recipe/hero-6">
-            健身初學者必看！10個常見的健身迷思
-        </a>
-    </li>
-    <li>
-        <a target="_blank"
-            href="https://www.pressplay.cc/project/2667A183130728C4AE30928EF3CFF4DD/articles/81556364B0DF014CE15B7625654B25B7">
-            新手健身怎麼訓練？「這些動作」從零開始健身也不怕
-        </a>
-    </li>
-    <li>
-        <a target="_blank"
-            href="https://blog.worldgymtaiwan.com/workout-method-at-home-and-gym#%E4%BB%80%E9%BA%BC%E6%98%AF%E6%A0%B8%E5%BF%83%E8%82%8C%E7%BE%A4%EF%BC%9F">
-            健身完整攻略手冊，看這本就夠！
-        </a>
-    </li>
-    <li>
-        <a target="_blank" href="https://blog.decathlon.tw/jian-shen-zhao-dao-shi-he-ni-de-zheng-que-xun-lian-qiang-du">
-            健身| 找到適合你的正確訓練強度
-        </a>
-    </li>
+    <!-- <h2 class="banner">好文章連結</h2> -->
+    <div class="banner">好文章連結</div>
+    <div class="tlist">
+        <li>
+            <a target="_blank" href="https://www.fe-amart.com.tw/index.php/life-style/life-info/secret-recipe/hero-6">
+                健身初學者必看！10個常見的健身迷思
+            </a>
+        </li>
+        <li>
+            <a target="_blank"
+                href="https://www.pressplay.cc/project/2667A183130728C4AE30928EF3CFF4DD/articles/81556364B0DF014CE15B7625654B25B7">
+                新手健身怎麼訓練？「這些動作」從零開始健身也不怕
+            </a>
+        </li>
+        <li>
+            <a target="_blank"
+                href="https://blog.worldgymtaiwan.com/workout-method-at-home-and-gym#%E4%BB%80%E9%BA%BC%E6%98%AF%E6%A0%B8%E5%BF%83%E8%82%8C%E7%BE%A4%EF%BC%9F">
+                健身完整攻略手冊，看這本就夠！
+            </a>
+        </li>
+        <li>
+            <a target="_blank"
+                href="https://blog.decathlon.tw/jian-shen-zhao-dao-shi-he-ni-de-zheng-que-xun-lian-qiang-du">
+                健身| 找到適合你的正確訓練強度
+            </a>
+        </li>
+    </div>
     <hr>
     <!-- 本地圖片 -->
     <img src="imgs/pic-1.jpg" alt="" width="30%">
     <img src="imgs/pic-2.jpg" alt="" width="30%">
     <img src="imgs/pic-3.jpg" alt="" width="30%">
 
-    <h2>一天所需卡路里</h2>
-    <table border="1">
-        <thead>
-            <tr>
-                <th>每天活動量</th>
-                <th>體重過輕者所需熱量</th>
-                <th>體重正常者所需熱量</th>
-                <th>體重過重、肥胖者所需熱量</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>輕度工作</td>
-                <td>35大卡 X 目前體重（公斤）</td>
-                <td>30大卡 X 目前體重（公斤）</td>
-                <td>20~25大卡 X 目前體重（公斤）</td>
-            </tr>
-            <tr>
-                <td>中度工作</td>
-                <td>40大卡 X 目前體重（公斤）</td>
-                <td>35大卡 X 目前體重（公斤）</td>
-                <td>30大卡 X 目前體重（公斤）</td>
-            </tr>
-            <tr>
-                <td>重度工作</td>
-                <td>45大卡 X 目前體重（公斤）</td>
-                <td>40大卡 X 目前體重（公斤）</td>
-                <td>35大卡 X 目前體重（公斤）</td>
-            </tr>
-        </tbody>
-    </table>
-    <p>
-        <a href="bmi.html"><b><u>&copy;計算BMI:&nbsp;</u></b></a>
-        一位民眾身高160公分，體重65公斤，BMI25.4kg/m2(=65÷1.6÷1.6)，體重屬於「過重」。
-        <br>
-        <b><u>&copy;計算所需熱量:&nbsp;</u></b>
-        因他的工作為坐辦公室，屬輕量工作，每天攝取熱量應在1300至1625大卡之間(=20~25大卡*65公斤)。
-    </p>
+    <!-- <h2 class="banner">一天所需卡路里</h2> -->
+    <div class="banner">一天所需卡路里</div>
+    <div class="tstyle">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>每天活動量</th>
+                    <th>體重過輕者所需熱量</th>
+                    <th>體重正常者所需熱量</th>
+                    <th>體重過重、肥胖者所需熱量</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>輕度工作</td>
+                    <td>35大卡 X 目前體重（公斤）</td>
+                    <td>30大卡 X 目前體重（公斤）</td>
+                    <td>20~25大卡 X 目前體重（公斤）</td>
+                </tr>
+                <tr>
+                    <td>中度工作</td>
+                    <td>40大卡 X 目前體重（公斤）</td>
+                    <td>35大卡 X 目前體重（公斤）</td>
+                    <td>30大卡 X 目前體重（公斤）</td>
+                </tr>
+                <tr>
+                    <td>重度工作</td>
+                    <td>45大卡 X 目前體重（公斤）</td>
+                    <td>40大卡 X 目前體重（公斤）</td>
+                    <td>35大卡 X 目前體重（公斤）</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            <a href="bmi.html"><b><u>&copy;計算BMI:&nbsp;</u></b></a>
+            一位民眾身高160公分，體重65公斤，BMI25.4kg/m2(=65÷1.6÷1.6)，體重屬於「過重」。
+            <br>
+            <b><u>&copy;計算所需熱量:&nbsp;</u></b>
+            因他的工作為坐辦公室，屬輕量工作，每天攝取熱量應在1300至1625大卡之間(=20~25大卡*65公斤)。
+        </p>
+    </div>
     <hr>
-    <h2>健身影片</h2>
-    <iframe width="49%" height="300px" src="https://www.youtube.com/embed/AgpIPM6ltg8"
-        title="全身肌肉训练教学，每个部位都有两个动作，每个动作做四组每组12次，组间休息45秒。#健身教学 #健身知识 #健身 #GYM" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <iframe width="49%" height="300px" src="https://www.youtube.com/embed/XKQsmx7S3Ds"
-        title="健身影片會鍛鍊到全身上下的肌肉，包含:胸肌、腹肌、背肌、大腿、屁股" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <video width="100%" src="video/sample_video (720p).mp4" controls></video>
+    <!-- <h2 class="banner">健身影片</h2> -->
+    <div class="banner">健身影片</div>
+    <div>
+        <iframe width="49%" height="300px" src="https://www.youtube.com/embed/AgpIPM6ltg8"
+            title="全身肌肉训练教学，每个部位都有两个动作，每个动作做四组每组12次，组间休息45秒。#健身教学 #健身知识 #健身 #GYM" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="49%" height="300px" src="https://www.youtube.com/embed/XKQsmx7S3Ds"
+            title="健身影片會鍛鍊到全身上下的肌肉，包含:胸肌、腹肌、背肌、大腿、屁股" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <video width="100%" src="video/sample_video (720p).mp4" controls></video>
+    </div>
 
 </body>
 
