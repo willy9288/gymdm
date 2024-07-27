@@ -48,9 +48,33 @@
             border: 1px black solid;
         }
 
-        .tstyle {
+        .slogan {
+            background-color: lightcoral;
+            color: aliceblue;
+            font-size: 24px;
+        }
+
+        #bmi-table {
+            width: 600px;
+            height: 200px;
+            background-color: aliceblue;
+            margin: 0 auto;
+        }
+
+        #bmi-table thead {
+            background-color: brown;
+            color: aliceblue;
+        }
+
+        #bmi-table th {
+            font-size: 20px;
+            font-weight: 300;
+        }
+
+        #bmi-table tbody {
+            background-color: lightslategray;
+            font-size: 0.8rem;
             text-align: left;
-            padding-left: 50px;
         }
     </style>
 </head>
@@ -65,7 +89,9 @@
             </b>
         <p>除了塑造好身材，透過健身可以刺激我們身體的肌肉，再搭配飲食的控制，這能大大幫助我們的肌肉量增加，以及讓我們的肌肉更加的結實。</p>
         <em style="background-color: lightgoldenrodyellow;">如果你對健身仍然保持著懷疑的態度，那你大可以去看看你喜歡的健身老戲骨幹，他們是如何做到年過50/60歲，依舊在
-            舞臺上或者是電影螢幕上綻放光彩。</em><u><b style="background-color: lightcoral;color: aliceblue;">答案就是堅持運動健身!</b></u></p>
+            舞臺上或者是電影螢幕上綻放光彩。</em><u><b>
+                <span class="slogan">答案就是堅持運動健身!</span>
+            </b></u></p>
     </div>
     <hr>
     <a href="https://tw.yahoo.com/">
@@ -124,45 +150,44 @@
 
     <!-- <h2 class="banner">一天所需卡路里</h2> -->
     <div class="banner">一天所需卡路里</div>
-    <div class="tstyle">
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>每天活動量</th>
-                    <th>體重過輕者所需熱量</th>
-                    <th>體重正常者所需熱量</th>
-                    <th>體重過重、肥胖者所需熱量</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>輕度工作</td>
-                    <td>35大卡 X 目前體重（公斤）</td>
-                    <td>30大卡 X 目前體重（公斤）</td>
-                    <td>20~25大卡 X 目前體重（公斤）</td>
-                </tr>
-                <tr>
-                    <td>中度工作</td>
-                    <td>40大卡 X 目前體重（公斤）</td>
-                    <td>35大卡 X 目前體重（公斤）</td>
-                    <td>30大卡 X 目前體重（公斤）</td>
-                </tr>
-                <tr>
-                    <td>重度工作</td>
-                    <td>45大卡 X 目前體重（公斤）</td>
-                    <td>40大卡 X 目前體重（公斤）</td>
-                    <td>35大卡 X 目前體重（公斤）</td>
-                </tr>
-            </tbody>
-        </table>
-        <p>
-            <a href="bmi.html"><b><u>&copy;計算BMI:&nbsp;</u></b></a>
-            一位民眾身高160公分，體重65公斤，BMI25.4kg/m2(=65÷1.6÷1.6)，體重屬於「過重」。
-            <br>
-            <b><u>&copy;計算所需熱量:&nbsp;</u></b>
-            因他的工作為坐辦公室，屬輕量工作，每天攝取熱量應在1300至1625大卡之間(=20~25大卡*65公斤)。
-        </p>
-    </div>
+    <table border="1" id="bmi-table">
+        <thead>
+            <tr>
+                <th>每天活動量</th>
+                <th>體重過輕者所需熱量</th>
+                <th>體重正常者所需熱量</th>
+                <th>體重過重、肥胖者所需熱量</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>輕度工作</td>
+                <td>35大卡 X 目前體重（公斤）</td>
+                <td>30大卡 X 目前體重（公斤）</td>
+                <td>20~25大卡 X 目前體重（公斤）</td>
+            </tr>
+            <tr>
+                <td>中度工作</td>
+                <td>40大卡 X 目前體重（公斤）</td>
+                <td>35大卡 X 目前體重（公斤）</td>
+                <td>30大卡 X 目前體重（公斤）</td>
+            </tr>
+            <tr>
+                <td>重度工作</td>
+                <td>45大卡 X 目前體重（公斤）</td>
+                <td>40大卡 X 目前體重（公斤）</td>
+                <td>35大卡 X 目前體重（公斤）</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>
+        <a href="bmi.html"><b><u>&copy;計算BMI:&nbsp;</u></b></a>
+        一位民眾身高160公分，體重65公斤，BMI25.4kg/m2(=65÷1.6÷1.6)，體重屬於「過重」。
+        <br>
+        <b><u>&copy;計算所需熱量:&nbsp;</u></b>
+        因他的工作為坐辦公室，屬輕量工作，每天攝取熱量應在1300至1625大卡之間(=20~25大卡*65公斤)。
+    </p>
+
     <hr>
     <!-- <h2 class="banner">健身影片</h2> -->
     <div class="banner">健身影片</div>
