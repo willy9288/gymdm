@@ -5,10 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMI 計算機</title>
+    <link rel="stylesheet" href="res/style.css">
+    <style>
+        form {
+            width: 50%;
+            background-color: rgb(184, 100, 69);
+            margin: 0 auto;
+            padding: 20px;
+            color: aliceblue;
+            border: 2px whitesmoke solid;
+            border-radius: 30px;
+        }
+
+        input {
+            margin: 6px 0;
+            width: 200px;
+        }
+
+        button {
+            background-color: rgb(255, 166, 0);
+            border: 0px;
+            border-radius: 10px;
+            width: 80px;
+            padding: 3px;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>BMI 計算機</h1>
+    <!-- <h1>BMI 計算機</h1> -->
+    <div class="banner">BMI 計算機</div>
     <form>
         <label for="usernm">姓名</label>
         <input id="usernm" name="usernm" type="text" value="jerry"><br>
@@ -27,12 +53,12 @@
 
         <p>
             <button>計算</button>
-            <button><a href="index.html">返回</a></button>
+            <!-- <button><a href="index.html">返回</a></button> -->
             <!-- <button><a href="/">返回</a></button> -->
         </p>
 
-
     </form>
+    <a href="index.html">返回</a>
 
 </body>
 

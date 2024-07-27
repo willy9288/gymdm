@@ -1,0 +1,71 @@
+body {
+    background-color: azure;
+    font-family: '標楷體', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* h2 {
+    background-color: cornflowerblue;
+    color: aliceblue;
+} */
+/* . ->代表 class */
+.banner {
+    width: 200px;
+    display: inline-block;
+    background-color: cornflowerblue;
+    color: aliceblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 26px;
+    margin: 12px;
+    padding: 6px 12px;
+    padding-left: 12px;
+}
+
+/* # ->代表 id */
+#title {
+    /* width: 200px; */
+    color: blueviolet;
+    background-color: palegoldenrod;
+    font-size: 50px;
+    margin: 2px 12px 24px 32px;
+    margin-top: 60px;
+    padding: 12px;
+    text-align: center;
+}
+
+.tlist {
+    background-color: bisque;
+    text-align: left;
+    padding: 12px;
+    border: 1px black solid;
+}
+
+.slogan {
+    background-color: lightcoral;
+    color: aliceblue;
+    font-size: 24px;
+}
+
+#bmi-table {
+    width: 600px;
+    height: 200px;
+    background-color: aliceblue;
+    margin: 0 auto;
+}
+
+#bmi-table thead {
+    background-color: brown;
+    color: aliceblue;
+}
+
+#bmi-table th {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#bmi-table tbody {
+    background-color: lightslategray;
+    font-size: 0.8rem;
+    text-align: left;
+}
