@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript dm</title>
+</head>
+
+<body>
+    <h1>Hello! JavaScript</h1>
+
+    <script>
+        // let x = 10;
+        // let y = 20;
+        // const PI = 3.1415926;
+        // x = 20;
+        // let z = x + y;
+        // // const不能重新賦值  PI = 10;
+        // // 第一種輸出方式
+        // console.log(z);
+        // console.log(x - y);
+
+        /**
+         * prompt ->提示輸入
+         * log ->輸出
+         * typeof ->查看變數型態
+         * let ->變數宣告
+         * document.write() ->給使用者看
+         */
+
+        // 取得圓面積
+        // let rds = 10;
+        // // let rds = prompt("請輸入半徑:");
+        // console.log(typeof (rds));
+        // let area = rds ** 2 * PI;
+        // // let rslt = "半徑為:" + rds + " 面積為:" + area
+        // const rslt = "半徑為:" + rds + " 面積為:" + area
+        // console.log(rslt);
+        // document.write(rslt);
+        // alert(rslt);
+
+        // 計算 BMI
+        /**
+         * 可輸入姓名/身高/體重
+         * 使用 document.write 輸出姓名/BMI
+         */
+
+        // let nm = prompt("請輸入姓名:");
+        // let hight = prompt("請輸入身高:");
+        // let wight = prompt("請輸入體重:");
+        // const bmiRslt = wight / ((hight / 100) ** 2);
+        // console.log(nm, hight, wight);
+        // // document.write("<h1>" + nm + "</h1>");
+        // document.write(`<h1>姓名:${nm}</h1>`);
+        // document.write(`<li>身高:${hight}</li>`);
+        // document.write(`<li>體重:${wight}</li>`);
+        // document.write(`<li>BMI=${bmiRslt.toFixed(2)}</li>`);
+        // // document.write("姓名:" + nm + "<br>" + " BMI=" + bmiRslt.toFixed(2));
+
+
+        // 判斷輸入格式錯誤
+        // let nm = prompt("請輸入姓名:");
+        // let hight = prompt("請輸入身高:");
+        // let wight = prompt("請輸入體重:");
+        // const bmiRslt = wight / ((hight / 100) ** 2);
+        // if (isNaN(bmiRslt)) {
+        //     alert("輸入不正確!");
+        // } else {
+        //     console.log(nm, hight, wight);
+        //     // document.write("<h1>" + nm + "</h1>");
+        //     document.write(`<h1>姓名:${nm}</h1>`);
+        //     document.write(`<li>身高:${hight}</li>`);
+        //     document.write(`<li>體重:${wight}</li>`);
+        //     document.write(`<li>BMI=${bmiRslt.toFixed(2)}</li>`);
+        //     // document.write("姓名:" + nm + "<br>" + " BMI=" + bmiRslt.toFixed(2));
+        // }
+
+
+        // 輸入 3次
+        // for (let i = 0; i < 3; i++) {
+        //     let nm = prompt("請輸入姓名:");
+        //     let hight = prompt("請輸入身高:");
+        //     let wight = prompt("請輸入體重:");
+        //     const bmiRslt = wight / ((hight / 100) ** 2);
+        //     if (isNaN(bmiRslt)) {
+        //         alert("輸入不正確!");
+        //     } else {
+        //         console.log(nm, hight, wight);
+        //         // document.write("<h1>" + nm + "</h1>");
+        //         document.write(`<h1>姓名:${nm}</h1>`);
+        //         document.write(`<li>身高:${hight}</li>`);
+        //         document.write(`<li>體重:${wight}</li>`);
+        //         document.write(`<li>BMI=${bmiRslt.toFixed(2)}</li>`);
+        //         // document.write("姓名:" + nm + "<br>" + " BMI=" + bmiRslt.toFixed(2));
+        //     }
+        // }
+
+        // while (true)
+        // cnt+=1 ->cnt++
+        let ttlBmi = 0;
+        let cnt = 0;
+        while (true) {
+            if (cnt == 3) {
+                break;
+            }
+            let nm = prompt("請輸入姓名:");
+            let hight = prompt("請輸入身高:");
+            let wight = prompt("請輸入體重:");
+
+            // 身高/體重 輸入不能為空
+            // or ->|| , and ->&& , not ->!
+            if (hight == "" || wight == "") {
+                alert("輸入不能為空!!!");
+            } else {
+                // 身高/體重 輸入範圍 1~500(包含1,500),否則警告輸入數值不正確,不做計算
+                // if ((hight < 1 || hight > 500) || (wight < 0 || wight > 500)) {
+                //     alert("輸入範圍不正確(1~500)");
+                //     continue;
+                // }
+
+                if (!isValid(hight, 1, 300) || !isValid(wight, 1, 500)) {
+                    alert("輸入範圍不正確");
+                    continue;
+                }
+                const bmiRslt = wight / ((hight / 100) ** 2);
+                console.log(nm, hight, wight, bmiRslt, cnt);
+                if (isNaN(bmiRslt)) {
+                    alert("輸入不正確!");
+                } else {
+                    document.write(`<h1>姓名:${nm}</h1>`);
+                    document.write(`<li>身高:${hight}</li>`);
+                    document.write(`<li>體重:${wight}</li>`);
+                    document.write(`<li>BMI=${bmiRslt.toFixed(2)}</li>`);
+                    cnt++;
+                    ttlBmi += bmiRslt;
+                }
+            }
+        }
+        // 函式宣告
+        // def isValid(value):
+        //     return value>=1 && value<=500
+
+        function isValid(value, start, end) {
+            return value >= start && value <= end;
+        }
+
+        // 輸出平均
+        const avgBmi = ttlBmi / cnt;
+        document.write(`<h1>平均 BMI:${avgBmi.toFixed(2)}</h1>`);
+
+    </script>
+</body>
+
+</html>
