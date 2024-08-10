@@ -7,7 +7,7 @@
     <title>BMI 計算機</title>
     <link rel="stylesheet" href="res/style.css">
     <style>
-        form {
+        #bmi-form {
             background-color: rgb(176, 184, 69);
             width: 30%;
             margin: 0 auto;
@@ -31,13 +31,13 @@
         }
 
         @media screen and (max-width:768px) {
-            form {
+            #bmi-form {
                 width: 50%;
             }
         }
 
         @media screen and (max-width:468px) {
-            form {
+            #bmi-form {
                 width: 80%;
             }
 
@@ -52,7 +52,8 @@
 <body>
     <!-- <h1>BMI 計算機</h1> -->
     <div class="banner">BMI 計算機</div>
-    <form>
+    <!-- <form> -->
+    <div id="bmi-form">
         <label for="usernm">姓名</label>
         <input id="usernm" name="usernm" type="text" value="jerry"><br>
         <label for="userpsw">密碼</label>
@@ -69,13 +70,33 @@
         <input type="file"><br>
 
         <p>
-            <button>計算</button>
+            <button onclick="calcBmi()">計算</button>
             <!-- <button><a href="index.html">返回</a></button> -->
             <!-- <button><a href="/">返回</a></button> -->
         </p>
+    </div>
 
-    </form>
+
+    <!-- </form> -->
     <a href="index.html">返回</a>
+
+    <script>
+        function calcBmi() {
+            // alert("按我")
+            // 計算 BMI
+            const bmiRslt = wightEl.value / ((hightEl.value / 100) ** 2);
+            alert(`BMI=${bmiRslt.toFixed(2)}`)
+        }
+
+        let hightEl = document.querySelector("#height");
+        let wightEl = document.querySelector("#weight");
+        let bttnEl = document.querySelector("button");
+
+        console.log(hightEl.value, wightEl.value, bttnEl);
+
+
+
+    </script>
 
 </body>
 
